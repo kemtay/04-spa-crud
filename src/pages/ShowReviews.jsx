@@ -55,15 +55,17 @@ export default function ShowReviews() {
             {
         // Alternate way: returns a new array
         // each element of the new array is transformed an element in an array
-        reviews.map((r,index)=>{
-            return  (<div key={r._id}>
-            <h3>{r.restaurant}</h3>
-            <p>{r.review}</p>
-            <p>Rating: {r.rating}/5</p>
-          </div>);
-        })
+            reviews.map((r,index)=>{
+                return  (<div className="card" key={r._id}>
+                <div className="card-body">
+                  <h3 className="card-title">{r.restaurant}</h3>
+                  <p className="card-text">{r.review}</p>
+                  <p className="card-text">Rating: {r.rating}/5</p>
+                </div>
+              </div>);
+            })
 
-      }
+        }
 
 
         
