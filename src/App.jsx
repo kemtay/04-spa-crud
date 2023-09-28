@@ -4,7 +4,7 @@ import { ReviewProvider } from "./ReviewContext";
 // import in page components
 import ShowReviews from "./pages/ShowReviews";
 import EditReview from "./pages/EditReview";
-import AddReview from "./pages/AddReview";
+import AddReview from "./pages/AddReview-old";
 
 // import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
